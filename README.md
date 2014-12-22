@@ -12,7 +12,7 @@ My bash shell configuration
 
 Add any custom bashrc content to ~/.bashrc.d files. Filenames must be of the form:
 
-  # bashrc.<description>
+  # bashrc.\<description\>
 
 ## Authors
 
