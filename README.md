@@ -12,7 +12,13 @@ My bash shell configuration
 
 Add any custom bashrc content to ~/.bashrc.d files. Filenames must be of the form:
 
-  # bashrc.\<description\>
+	# bashrc.\<description\>
+
+For example, bashrc.shellhist contains shell history-related settings:
+
+	export HISTFILESIZE=30000
+	export HISTTIMEFORMAT='%a %T '
+	shopt -s histappend
 
 ## Authors
 
