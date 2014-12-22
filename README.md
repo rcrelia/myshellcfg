@@ -2,17 +2,21 @@
 
 ## Description
 
-My bash shell configuration
+My bash shell configuration files 
 
 ## Installation
 
-    ./myshellcfg.install.sh
+The included install script will make a backup of existing
+files/directories (using a PID suffix on a copy of the existing
+file/dir before replacing)
+
+	./myshellcfg.install.sh
 
 ## Usage
 
 Add any custom bashrc content to ~/.bashrc.d files. Filenames must be of the form:
 
-	# bashrc.\<description\>
+	bashrc.<description>
 
 For example, bashrc.shellhist contains shell history-related settings:
 
