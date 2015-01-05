@@ -1,0 +1,6 @@
+alias agentize='. /Users/rcrelia/bin/myagent'
+
+if [ -f ~/.myagent ]; then
+  . ~/.myagent
+fi
+
