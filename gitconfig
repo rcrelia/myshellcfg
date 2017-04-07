@@ -1,0 +1,41 @@
+[alias]
+  fa = fetch --all
+  far = fetch --all --recurse-submodules
+  t = log --graph --pretty=oneline --abbrev-commit --decorate --color
+  ta = log --graph --pretty=oneline --abbrev-commit --decorate --color --all
+[core]
+  excludesfile = /Users/rcrelia/.gitignore_global
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  showbranch = auto
+  ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[credential]
+  helper = osxkeychain
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[help]
+  autocorrect = 50
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[push]
+  default = simple
+[user]
+  name =
+  email =

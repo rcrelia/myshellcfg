@@ -1,3 +1,6 @@
 export HISTFILESIZE=30000
 export HISTTIMEFORMAT='%a %T '
 shopt -s histappend
+
+alias hgrep="history|grep -i "
+alias hfgrep="cat ~/.bash_history|sort -u|grep -i "

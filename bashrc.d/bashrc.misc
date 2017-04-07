@@ -4,3 +4,12 @@ if [ -f ~/.myagent ]; then
   . ~/.myagent
 fi
 
+alias assh='function _assh(){ ssh -A ec2-user@$1 ; };_assh'
+
+alias gfiles='function _gfiles(){ find . -type f |xargs -n1 grep $1 ; };_gfiles'
+alias glfiles='function _glfiles(){ find . -type f |xargs -n1 grep -l $1 ; };_glfiles'
+
+alias sshpw='function _sshpw(){ ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no "$1" ; };_sshpw'
+
+# Atom pkg git-plus updates overwrite existing keymap customizations
+alias gpkey='cp $HOME/Documents/git-plus.cson ~/.atom/packages/git-plus/keymaps/git-plus.cson'

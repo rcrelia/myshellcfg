@@ -1,5 +1,5 @@
-alias dfh='df -h'
 alias cls='clear'
+alias dfh='df -h'
 alias dmesg='sudo dmesg'
 alias grep='grep --color=auto'
 

@@ -2,7 +2,7 @@
 
 myPid=$$
 
-for myfile in bash_profile bashrc git-completion.sh git-prompt.sh ; 
+for myfile in bash_profile bashrc git-completion.sh git-prompt.sh gitignore_global gitconfig ;
 do
  if [ -f ~/.$myfile ]; then
   cp -p ~/.$myfile ~/.$myfile.$myPid
