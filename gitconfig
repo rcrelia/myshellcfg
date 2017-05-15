@@ -3,6 +3,7 @@
   far = fetch --all --recurse-submodules
   t = log --graph --pretty=oneline --abbrev-commit --decorate --color
   ta = log --graph --pretty=oneline --abbrev-commit --decorate --color --all
+  h = log --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)<%an>%Creset %C(yellow)%d%Creset' --abbrev-commit
 [core]
   excludesfile = /Users/rcrelia/.gitignore_global
 [color]
