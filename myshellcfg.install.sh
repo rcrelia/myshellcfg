@@ -16,3 +16,4 @@ if [ -d ~/.bashrc.d ]; then
   cp -p bashrc.d/bashrc* ~/.bashrc.d
 fi
 
+cp -p pylintrc ~/pylintrc
