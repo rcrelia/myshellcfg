@@ -1,0 +1,6 @@
+# thanks to Dan Bader for this
+alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
+alias de='deactivate'
+alias newvenv='python -m virtualenv ./venv'
+
+alias pylintmsgs='pylint --list-msgs'
