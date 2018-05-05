@@ -13,3 +13,5 @@ alias sshpw='function _sshpw(){ ssh -o PreferredAuthentications=password -o Pubk
 
 # Atom pkg git-plus updates overwrite existing keymap customizations
 alias gpkey='cp $HOME/Documents/git-plus.cson ~/.atom/packages/git-plus/keymaps/git-plus.cson'
+
+alias randfile='epoch=$(date "+%s"); vi ~/tmp/$epoch'
